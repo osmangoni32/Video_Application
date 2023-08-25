@@ -1,10 +1,17 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-
+import Layout from "./pages/Layout";
+import Video from "./pages/Video";
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Videos/:VideoId" element={<Video />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
