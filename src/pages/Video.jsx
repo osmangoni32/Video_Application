@@ -36,7 +36,7 @@ export default function Video() {
           <VideoDescription video={video} />
         </div>
 
-        <RelatedVideoList currentvideoId={id} tags={tags} />
+        <RelatedVideoList currentVideoId={id} tags={tags} />
       </div>
     );
   }
