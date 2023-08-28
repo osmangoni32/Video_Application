@@ -19,5 +19,8 @@ Please follow the below instructions to run server in your machine:
    ```sh
    npm start
    ```
-
+3. Then Start the application
+   ```sh
+   npm run dev
+   ```
 <br>
