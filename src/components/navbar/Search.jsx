@@ -11,7 +11,7 @@ export default function Search() {
   const navigate = useNavigate();
   const handleSearch = (e) => setInput(e.target.value);
 
-  const submitHandler = (e) => {
+  const submitHandlerr = (e) => {
     e.preventDefault();
     dispatch(tagSearched(input));
     //
@@ -22,7 +22,7 @@ export default function Search() {
 
   return (
     <>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandlerr}>
         <input
           className="outline-none border-none mr-2"
           type="search"
